@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Componente Menu</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_orange-amber.min.css" />
+		<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+	</head>
+	<style>
+		body{
+			background: #FAFAFA;
+		}
+
+		.mdl-grid{
+			min-height: 320px;
+			color: #757575 !important;
+		}
+
+		.background-cinza{
+			background: #eee;
+			min-height: 50px;
+		}
+
+		.md-18{font-size: 18px;}
+		.md-24{font-size: 24px;}
+		.md-36{font-size: 36px;}
+		.md-48{font-size: 48px;}
+		.laranja{color: #fb8c00;}
+		.verde{color: #A4C639;}
+
+		.demonstracao-card{
+			width: 512px;
+		}
+
+		.demonstracao-card > .mdl-card__title{
+			color: #fff;
+			height: 176px;
+			background: url('img/dhronix223.jpg') center / cover;
+		}
+
+		.demonstracao-card >.mdl-card__menu{
+			color: #fff;
+		}
+
+		.container-menu{
+			position: relative;
+			width: 200px;
+			display: inline-block;
+			margin: 5px;
+			vertical-align: top;
+		}
+
+		.background-menu{
+			background: white;
+			height: 148px;
+			width: 100%;
+		}
+
+		.bar-menu-right, .bar-menu-left{
+			box-sizing: border-box;
+			background: #3F5185;
+			color: white;
+			width: 100%;
+			padding: 16px;
+		}
+
+		.bar-menu-right{
+			text-align: right;
+		}
+
+		.bar-menu-left{
+			text-align: left;
+		}
+
+		.mdl-menu__item a{
+			color: rgba(0,0,0,.87);
+			text-decoration: none;
+		}
+
+		.mdl-menu__item a:hover{
+			color: rgba(0,0,0,.87);
+			text-decoration: none;
+		}
+
+
+	</style>
+	<body>
+		<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+			<header class="mdl-layout__header"><!--Para cabeçalho transparente acrescentar no final da classe mdl-layout__header-2transpatent Obs: antes do transparente são 2 tracinhos-->
+				<div class="mdl-layout__header-row">
+					<span class="mdl-layout-title">Introdução</span>
+					<div class="mdl-layout-spacer"></div>
+					<nav class="mdl-navigation">
+						<a href="#" class="mdl-navigation__link">Link 1</a>
+						<a href="#" class="mdl-navigation__link">Link 2</a>
+						<a href="#" class="mdl-navigation__link">Link 3</a>
+					</nav>
+				</div>
+			</header>
+			<div class="mdl-layout__drawer">
+				<span class="mdl-layout-title">Introdução</span>
+					<nav class="mdl-navigation">
+						<a href="#" class="mdl-navigation__link">Link 1</a>
+						<a href="#" class="mdl-navigation__link">Link 2</a>
+						<a href="#" class="mdl-navigation__link">Link 3</a>
+					</nav>
+					<div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+						<label class="mdl-button mdl-js-button mdl-button--icon" for="pesquisa">
+							<i class="material-icons">search</i>
+						</label>
+						<div class="mdl-textfield__expandable-holder">
+							<input class="mdl-textfield__input" type="text" id="pesquisa">
+						</div>
+					</div>
+			</div>
+	
+				<main>
+					<div class="mdl-grid">
+						<div class="mdl-cell mdl-cell--6-col">
+							<h3>cards</h3>
+							<div class="background-cinza">
+
+								<div class="mdl-card mdl-shadow--2dp demonstracao-card">
+									<div class="mdl-card__title">
+										<h2 class="mdl-card__title-text">Título do Cartão</h2>
+									</div>
+									<div class="mdl-card__supporting-text">
+										Lorem ipsum dolor sit amet, consectetur adpising, Lorem ipsum dolor sit amet, consectetur adpising,Lorem ipsum dolor sit amet, consectetur adpising.
+									</div>
+									<div class="mdl-card__actions mdl-card--border">
+										<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary mdl-button--raised">Button</button>
+									</div>
+									<div class="mdl-card__menu">
+										<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon  mdl-button--fab mdl-button--primary">
+											<i class="material-icons">share</i>
+										</button>
+									</div>
+									
+								</div>
+							</div>
+							
+						</div>
+						<div class="mdl-cell mdl-cel--6-col">
+						<h3>Tabelas</h3>
+							<div class="background-cinza">
+								<table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp mdl-data-table--selectable">
+									<thead>
+										<tr>
+											<th>Nome</th>
+											<th>Idade</th>
+											<th>Id</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>João Gabriel</td>
+											<td>30</td>
+											<td>9807</td>
+										</tr>
+										<tr>
+											<td>Juliano Gomes Junior</td>
+											<td>25</td>
+											<td>9807</td>
+										</tr>
+										<tr>
+											<td>Arthur Gabriel de Lira</td>
+											<td>20</td>
+											<td>9807</td>
+										</tr>
+										<tr>
+											<td>Manuela Joaquina Santos</td>
+											<td>34</td>
+											<td>9807</td>
+										</tr>		
+									</tbody>
+								</table>							
+							</div>
+						</div>
+					</div>	
+					<div class="mdl-cell mdl-cell--6-col">
+						<h3>Tooltips</h3>
+						<div class="background-cinza">
+							<p id="tool1">Html</p>
+							<span for="tool1" class="mdl-tooltip">HyperText Markup Language</span>	
+							<span for="tool6" class="mdl-tooltip">
+							<i class=""></i>
+							HyperText Markup Language</span>	
+						</div>
+					</div>
+					<div class="mdl-cell mdl-cell--8-col">
+						<h3>Componente Menu</h3>
+						<div class="background-cinza">
+							<div class="container-menu mdl-shadow--2dp">
+								<div class="bar-menu-left">
+									<button id="menu1" class="mdl-button mdl-js-button mdl-button--icon">
+										<i class="material-icons">more_vert</i>
+									</button>
+									<ul for="menu1" class="mdl-menu mdl-js-menu">
+										<li class="mdl-menu__item">Item 1</li>
+										<li class="mdl-menu__item">Item 2</li>
+										<li class="mdl-menu__item">Item 3</li>
+									</ul>
+								</div>
+								<div class="background-menu"></div>
+							</div>
+
+							<div class="container-menu mdl-shadow--2dp">
+								<div class="bar-menu-right">
+									<button id="menu2" class="mdl-button mdl-js-button mdl-button--icon">
+										<i class="material-icons">more_vert</i>
+									</button>
+									<ul for="menu2" class="mdl-menu mdl-js-menu mdl-menu--bottom-right">
+										<li class="mdl-menu__item">Item 1</li>
+										<li class="mdl-menu__item">Item 2</li>
+										<li class="mdl-menu__item">Item 3</li>
+									</ul>
+								</div>
+								<div class="background-menu"></div>
+							</div>
+						
+							<div class="container-menu mdl-shadow--2dp">
+								<div class="background-menu"></div>
+								<div class="bar-menu-left">
+									<button id="menu3" class="mdl-button mdl-js-button mdl-button--icon">
+										<i class="material-icons">more_vert</i>
+									</button>
+									<ul for="menu3" class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect">
+										<li class="mdl-menu__item">Item 1</li>
+										<li class="mdl-menu__item">Item 2</li>
+										<li class="mdl-menu__item">Item 3</li>
+									</ul>
+								</div>
+							</div>
+						
+							<div class="container-menu mdl-shadow--2dp">
+								<div class="background-menu"></div>
+								<div class="bar-menu-right">
+									<button id="menu4" class="mdl-button mdl-js-button mdl-button--icon">
+										<i class="material-icons">more_vert</i>
+									</button>
+									<ul for="menu4" class="mdl-menu mdl-js-menu mdl-menu--top-right mdl-js-ripple-effect">
+										<li class="mdl-menu__item"><a href="#">Item 1</a></li>
+										<li class="mdl-menu__item"><a href="#">Item 2</a></li>
+										<li class="mdl-menu__item"><a href="#">Item 3</a></li>
+									</ul>
+							</div>
+						</div>
+					</div>
+				</main>	
+
+                
+               
+				<footer class="mdl-mini-footer">
+					<div class="mdl-mini-footer--left-section">
+						<div class="mdl-logo">Ponto Canal</div>
+						<ul class="mdl-mini-footer--link-list">
+							<li><a href="">Canal no Youtube</a></li>
+							<li><a href="">Fórum de dúvidas</a></li>
+						</ul>
+					</div>
+					<div class="mdl-mini-footer--right-section">
+						<div class="mdl-logo">Ponto Canal</div>
+						<ul class="mdl-mini-footer--link-list">
+							<li><a href="">Canal no Youtube</a></li>
+							<li><a href="">Fórum de dúvidas</a></li>
+						</ul>
+					</div>
+				</footer> 
+
+			
+	</body>
+</html>
